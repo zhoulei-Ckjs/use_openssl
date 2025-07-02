@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(use_openssl)
 
-set(CMAKE_CXX_STANDARD 11)
+set(OPENSSL_ROOT_DIR "/home/zhoulei/.local/ssl/lib64/")
 
-add_executable(use_openssl main.cpp)
+add_subdirectory(client)
+add_subdirectory(server)
